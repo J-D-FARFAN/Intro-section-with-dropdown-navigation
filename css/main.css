@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(styles.css);
+@import url(reset.css);
+@import url(media1100.css);
+@import url(media850.css);
+
+:root{
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+
+    /*TXT STYLE*/
+    --fontZ: 18px; /*Font size (paragraph)*/
+    --fontWeightOne: 500;
+    --fontWeightTwo: 700;
+    --fontF: "Epilogue", sans-serif;/*Font Family (paragraph)*/
+    --fontTitle: 9rem;
+}
+
+.menuBurguerClose{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 25px;
+    background-image: url(../images/icon-close-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.montionBlur{
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: hsla(240, 100%, 5%, 0.337);
+    animation: blur 1s forwards;
+}
+
+@keyframes blur {
+    100%{
+        background-color: hsla(240, 100%, 5%, 0.666);
+    }
+}
+
+.iconArrowDown{
+    width: 7px;
+    height: 7px;
+    background-image: url(../images/icon-arrow-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5px;
+}
+
+.iconArrowUp{
+    width: 7px;
+    height: 7px;
+    background-image: url(../images/icon-arrow-up.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5px;
+}

@@ -1,0 +1,187 @@
+body{
+    background-color: var(--AlmostWhite);
+    height: 100vh;
+
+    .content__all{
+        height: 100%;
+
+        .contentHeader--navbar{
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+            padding: 2rem 3rem;
+
+            .contentNavbars{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .navbarHorizontal{
+                    display: flex;
+                    gap: 5rem;
+
+                    .itms-navbarHorizontal{
+                        cursor: pointer;
+                        &:hover{color: var(--AlmostBlack);}
+                    }
+
+                    .position--bxNavbarH{
+                        position: relative;
+                        display: flex;
+                        gap: 12px;
+                        .navbarVertical{
+                            position: absolute;
+                            padding: 2rem;
+                            margin-top: 1.5rem;
+                            border-radius: 12px;
+
+                            background-color: var(--AlmostWhite);
+                            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.181));
+
+                            display: none;
+                            flex-direction: column;
+                            gap: 1.5rem;
+                            margin-top: 3rem;
+
+                            .itms-navbarVertical{
+                                font-size: 14px;
+                                font-weight: var(--fontWeightOne);
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+                                
+                                .iconsNavbarFeature{margin-right: 1rem;}
+
+                                &:hover{color: var(--AlmostBlack);}
+                            }
+                        }
+
+                        .navbarFeature{
+                            width: 150px;
+                            left: -60px;
+                        }
+                        .navbarCompany{width: 110px;}
+                    }
+
+                    li{
+                        font-size: 14px;
+                        color: var(--AlmostBlack);
+                        font-weight: var(--fontWeightOne);
+                        color: var(--MediumGray);
+                        transition: .3s ease;
+                    }
+                }
+
+                .contentBtn--login{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+
+                    .btn-sylesNavbar{
+                        width: 104px;
+                        height: 42px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        color: var(--MediumGray);
+                        font-weight: var(--fontWeightOne);
+                        transition: .3s ease;
+
+                        &:hover{color: var(--AlmostBlack);}
+                    }
+
+                    .btn--register{
+                        border: 2px solid var(--MediumGray);
+                        border-radius: 14px;
+                        &:hover{border-color: var(--AlmostBlack);}
+                    }
+                }
+            }
+            .menuBurguer{
+                display: none;
+                width: 40px;
+                height: 20px;
+                background-image: url(../images/icon-menu.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+
+        .content__allHero{
+            height: fit-content;
+
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+
+            .bx--imagePage{
+                width: 50%;
+                height: 639px;
+                background: url(../images/image-hero-desktop.png) center no-repeat;
+                background-size: contain;
+            }
+
+            .content--introductionPage{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding-left: 10%;
+
+                .introductionPage{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5rem;
+
+
+                    .title{
+                        font-size: var(--fontTitle);
+                        font-weight: var(--fontWeightTwo);
+                        color: var(--AlmostBlack);
+                    }
+
+                    .txt{
+                        font-size: var(--fontZ);
+                        color: var(--MediumGray);
+                        width: 450px;
+                        line-height: 2.5rem;
+                    }
+
+                    .btn--learnMore{
+                        width: 162px;
+                        height: 56px;
+                        border-radius: 14px;
+                        border: 2px solid transparent;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        background-color: var(--AlmostBlack);
+                        color: var(--AlmostWhite);
+                        font-size: 16px;
+                        font-weight: var(--fontWeightTwo);
+                        margin-bottom: 9rem;
+                        transition: .3s ease;
+
+                        &:hover{
+                            background-color: var(--AlmostWhite);
+                            color: var(--AlmostBlack);
+                            border: 2px solid var(--AlmostBlack);
+                        }
+                    }
+                }
+
+                .bx--logoClients{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

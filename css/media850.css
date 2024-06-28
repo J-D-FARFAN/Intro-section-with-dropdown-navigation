@@ -1,0 +1,114 @@
+@import url(main.css);
+
+@media screen and (max-width: 850px) {
+    :root{
+        --fontTitle: 3.7rem !important;
+    }
+    body{
+        .content__all{
+            .contentHeader--navbar{
+                position: relative;
+                padding: 2rem;
+                display: flex;
+                justify-content: space-between;
+                z-index: 99;
+                .contentNavbars{
+                    position: absolute;
+                    width: 65%;
+                    height: 100vh;
+                    top: 0;
+                    right: 0;
+                    display: none;
+                    align-items: start;
+                    flex-direction: column;
+                    padding: 8rem 3rem;
+
+                    background-color: var(--AlmostWhite);
+
+                    .navbarHorizontal{
+                        flex-direction: column;
+                        margin-bottom: 3rem;
+                        gap: 2rem;
+                        font-size: 16px;
+
+                        .position--bxNavbarH{
+                            .navbarVertical{
+                                position: relative;
+                                top: 0;
+                                left: -99px;
+                                filter: drop-shadow(0px 0px 0px transparent);
+
+                                .itms-navbarVertical{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        li{font-size: 16px;}
+                    }
+
+                    .contentBtn--login{
+                        width: 100%;
+                        gap: 1rem;
+                        flex-direction: column;
+
+                        .btn-sylesNavbar{
+                            width: 100%;
+                        }
+                    }
+                }
+                .menuBurguer{
+                    position: relative;
+                    z-index: 100;
+                    display: flex;
+                }
+            }
+            .content__allHero{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .bx--imagePage{
+                    width: 100%;
+                    height: 300px;
+                    background-image: url(../images/image-hero-mobile.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .content--introductionPage{
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    .introductionPage{
+                        text-align: center;
+                        align-items: center;
+                        gap: 3rem;
+
+                        .btn--learnMore{
+                            margin-bottom: 4rem;
+                        }
+
+                        .txt{
+                            width: 365px;
+                        }
+                    }
+
+                    .bx--logoClients{
+                        padding: 2rem;
+                        .logoClient{
+                            width: 60px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                
+                
+            }
+        }
+    }
+    
+}

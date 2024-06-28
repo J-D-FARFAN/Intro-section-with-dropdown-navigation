@@ -1,0 +1,33 @@
+@import url(main.css);
+
+@media screen and (max-width: 1100px){
+    :root{
+        --fontTitle: 6rem !important;
+        --fontZ: 16px !important; /*Font size (paragraph)*/
+    }
+
+    body{
+        height: 100%;
+        .content__all{
+            .content__allHero{
+                height: 100%;
+                gap: 4rem;
+                .bx--imagePage{ 
+                    width: 100%;
+                }
+                .content--introductionPage{
+                    padding-left: 7%;
+                    .introductionPage{
+                        .title{width: 100%;}
+                        .txt{width: 100%;}
+                        .btn--learnMore{
+                            width: 152px;
+                            height: 46px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
